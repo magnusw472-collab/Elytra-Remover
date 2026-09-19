@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "elytraremover",
+  "version": "${version}",
+  "name": "Elytra Remover",
+  "description": "Strips the elytra out of item frames the instant a chunk in the End is first generated, before any player could reach it.",
+  "authors": [
+    "Mag"
+  ],
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mag.elytraremover.ElytraRemoverMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "fabric-api": "*",
+    "java": ">=21"
+  }
+}
