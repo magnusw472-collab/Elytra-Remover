@@ -29,5 +29,5 @@ jobs:
       - name: Upload built jar
         uses: actions/upload-artifact@v4
         with:
-          name: invincible-fabric-jar
+          name: elytra-remover-jar
           path: build/libs/*.jar
