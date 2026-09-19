@@ -34,7 +34,7 @@ public class ElytraRemoverMod implements ModInitializer {
         ChunkPos pos = chunk.getPos();
         Box box = new Box(
                 pos.getStartX(), world.getBottomY(), pos.getStartZ(),
-                pos.getStartX() + 16, world.getTopY(), pos.getStartZ() + 16
+                pos.getStartX() + 16, world.getTopYInclusive() + 1, pos.getStartZ() + 16
         );
 
         for (ItemFrameEntity frame : world.getEntitiesByClass(ItemFrameEntity.class, box, e -> true)) {
